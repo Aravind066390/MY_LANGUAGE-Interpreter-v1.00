@@ -1,0 +1,93 @@
+1.)* `=addition;(for if and print (p) only);
+2.)*#=multiplication;(for if and print (p) only);
+3.)*$=substraction;(for if and print (p) only);
+4.)*%=division;(for if and print (p) only);
+5.)*a=during use addition has to be called like this;
+6.)*$=during use  substraction has to be called like this;
+7.)*d=during use  division has to be called like this;
+8.)*m=during use  multiplication has to be called like this;
+9.)addition,substraction,multiplication,division=will take 2 values at a time;+-/
+10.)*/n=new-line-charecter;
+11.)*if=start a if statement (if@#<)
+12.)*if=uses the four operators to function;(it takes <,>,=,!(not equal)).
+13.)* }=end of a if statement;
+14.)*g=start of a while loop;(g 0 5);
+15.)*w=ending of a while loop;
+16.)*p=printf statement;
+17.)* ;=end of printf statement;
+18.)*RET=it  is a primitve version of goto only tracable to upper side of the code which is already read by the interpreter;
+19.)* : =it represents the end of the RET this is the point where the code is expected rest at the end point;
+20.)*VAR =used to decalare a variable (SYNTAX= VAR a 5) here after var one blank space is necessay to consume internal buffer produced during tokenization
+21.)* ^=using this inside p(printf) would allow us to print the value stored in the variable (SYNTAX ^a here a value is printed)
+22.)* ++ -- / * =these are arethmetic operators valid and can be used in the language.
+23.)* s=it is equivalent to scanf of c it can read or take input (SYNTAX s a(variable name))
+24.)* *= it is called as VAR specifier it specifies to if and g that input what it is going to receive will be in variable form 
+(SYNTAX(g* m y),(SYNTAX if* my<))
+25.)* ( and ) =these are one left and one right shift operations and always remember to leave one space in between as there is a null consumer over there((SYNTAX ( a  ),SYNTAX ) a ).
+26.)* tr=it starts to ignore the next upcoming code so its for going front its ended with ~( syntax   tr   code   ~)
+27.)* SP=it is used for swapping two inputs of variable(SYNTAX  (SP xy) here the x and y are two variables to be swapped)
+28.)* &=this is used to find the address of the variable declared.(SYNTAX (p sum location=&^x;)here x is the variable and & represents its location).
+29.)*BASIC_ERRORS=; and } missing will be seen by the system and informed during run time
+30.)* !=bit reverse statement useful for reversing bit data it has (SYNTAX (if f=10 then    !f will reverse it to -6)).its behaviour changes acc to the system compiling the code.
+31.)* fun=this refers to function and follows scope of order like global and local.(SYNTAX  (fun{ 4(any num)  0(extension number)  ?(here ? shows end of function ))).here extension number shows the extension count like inheritence of java.
+32.)*A= its used after @ at the end to get total allocated memeory during runtime(SYNTAX (@A) here the memory alllocated is shown at the end and works like that).
+33.)* call= it is used to call a function(SYNTAX  (call 5(num_of_function) 0(extension number)) this is used to call and rerun a function when called).
+34.)* call*=this is variable influenced call (SYNTAX (call*xy(x and y are two variables))here we use variablles instead of dirext hard coded values).
+35.)* ret=this is used to return a value back to main block (SYNTAX (ret x y) here x value should be a variable in fun and y in main and y is now transferred to the block main so in short it transfers the value from function block to main block).
+36.)* WAIT= this is used to create a sleep state in the system similar but not exactly sleep state it pauses the code execution according to tick time (SYNTAX (WAIT 100) here is 100 tick time here dormancy is decided by tick time),here the number is tick value.
+37.)* WAIT*=this is just a WAIT with entry for variables here we use * to specify input is a variable (SYNTAX (WAIT*a) here a is the variable).
+38.)* 666=secret silencer it silences the creater name or it just removes the last printing line (SYNTAX (AFTER @ 666)or(@A 666)),this is useful to remove un-necessary content.
+39.)* import=this is a special keyword used to import new header files into the system like math.h (SYNTAX (import math.a)).it can never be used inside a g(equivalent to for or similar) loop because it can be only initialized once and to prevent modifications.
+40.)* Pow()=this is a function present within the math.h library and can be called using a import (SYNTAX (Pow(x,y,z)or Pow(2,3,z))).here we can use either digits or variables both are valid inputs taken by the system so both of them work.present in math.a.
+41.)* Sqrt()=similar to pow but it takes 2 input and first is value and can be both variable or number(SYNTAX (Sqrt(x,z)or Sqrt(4,z)))
+present in math.a.
+42.)* Fact()=similar to Sqrt in math.h and takes 2 input one being number or variable other being strictly a variable (SYNTAX Fact(x,y)or Fact(5,y)) present in math.a.
+43.)* SIN,COS,TAN =basic math functions to get cos,sin and tan use degree values not radian (SYNTAX (SIN(x,u)or SIN(90,u))).same for both tan and cos present in math.a.
+44.)* SINA,COSA,TANA =basic of math similar to sin,cos,tan but inverse or sin inverse,cos inverse ,tan inverse(SYNTAX (SINA(90,u)or (SINA(y,u)))) present in math.a.
+45.)* LOG,LOGA,LOG1=basic log operations here log refers to log and LOGA refers to anti-log and LOG1 refers to log to the base 10 (SYNTAX
+ (LOG(3,x)or LOG1(x,y)))same like this found in math.a library.
+46.)*  PAUS=its the pause function built it waits for the user to press enter to continue the execution of the code.(SYNTAX (PAUS())).its found in library systems.a. It doesnt take any input from the user it just waits for the user input.found in systems.a library.
+47.)* Time=this is used to call the current time of the system (SYNTAX (Time())).it takes no parameter and immediatel returns time.
+found in systems.a library.
+48.)* Rand=Rand is a function used to assign random value (SYNTAX (Rand(a,b))).here a is the max value and b is the position to store the value.found in systems.a library.
+49.)* RunT=RunT stands for Run Time or the total run time of the program (SYNTAX (RunT() )).found in systems.a library.
+50.)* Flush=it flushes the complete variables entered into the system it clears all the seclared variables and frees the systems.
+(SYNTAX  (Flush)).here the Flush is found in systems.a library.
+51.)* = =this is equal sign its used to assign particular value.(SYNTAX (x=y) OR (x=12.4)).here we are assigning value of y to x and other we are assigning 12.4 into x.
+52.)* % = it is modular division (SYNTAX (a%b a) OR (2%b a) OR (a%2 a) OR (2%2 a)).this can be used to store a value.found in math.a header file.
+53.)* Abs= this is used as mod function it converts things into greater than zero always( SYNTAX Abs(a)).found in math.a.
+54.)* ALPHAS=ALPHAS is a declaration of data type string (SYNTAX (ALPHAS a).decleration of String variable).found in string.a library.
+55.)* %s=it is the string specifier used to specify string type in data.(SYNTAX (String a)).create a variable a of data type string.
+56.)* GRAPH=it is used for basic analysis of a particular set of data.(SYNTAX (GRAPH(100,a,b...))here multiple data can be stored.found in library math.a.
+57.)* GRAPHP=it is a different version of graph with addition of highest and lowest value and its y axis is power and x is the number of powers.(SYNTAX (GRAPHP(10,10,a,b...))).here first two values should be numerical and rest as variables.found in math.a library.
+58.)* s$ = string scanner is a method to implement scanning of a string literal (SYNTAX (s$a)).here a is the variable and s is scanner and 
+$ is the system meant to inform the input device that the incomming input is a string.
+59.)* ENCRIP=encrypt is a method of encrypting string into unreadable forms and this can be corrected by using DNCRIP(SYNTAX (ENCRIP a)here a is the variable name).this is found in string.a library.
+60.)* DNCRIP=de-encrypt is the method to de-encrypt the encrypted data into redable form.(SYNTAX (DNCRIP a)here a is the variable).found in string.a library.
+61.)* LENGTH=it is used to find the length of the string.(SYNTAX (LENGTH a b) here string a size is stored in b.b should be a VAR and a should be a string or ALPHAS).The library required to use this is string.a.
+62.)* Reverg=it is used to reverse the string and store it (SYNTAX (Reverg a) it is used to reverse string stored in a and again store it back).it is found in string.a .
+63.)* HOMP=it is a if statement for comparing strings like if for string.(SYNTAX (HOMP(a,b) and use } to show the end).).found in string.a library.
+64.)* CACT=it is used for concatination of two strings (SYNTAX (CACT(a,b) concatenate two strings and store values)).found in string.a
+65.)* CPYS=it is used to copy one string to other (SYNTAX (CPYS(a,b))).here b is copied to a.it is found in string.a library.
+66.)* Release=it is used to release the imported libraries from the system.(SYNTAX (Release string.a)).it is used to release libraries.
+67.)* impor*=it is used to import all the libraries at once (SYNTAX (impor*)).
+68.)* HASH=it is used to hash a value to convert alphabets into symbols.(SYNTAX (HASH(a))).found in string.a .
+69.)* DASH=it is used de-hash the hashed values into its original form (SYNTAX (DASH(a))).found in string.a .
+70.)* FUSE=it is used to append two numbers (SYNTAX (FUSE(a,b,c....))everything is appended to first entry variable).
+71.)* YS GRAPHP=it is used for graphical data visualization (SYNTAX (YS GRAPHP(20,20,a,v,b) here a and b and c are variables and 20,20 are the dimensions of the graph being drawn)).found in visuals.a. it opens a console to represent data in a beautiful manner but more energy consuming for the system.
+72.)* YS CHARTR=it is the bar graph representation of the normal point graph (SYNTAX (YS CHARTR(30,30,a,b,c)). same as YS GRAPHP ).found in library known as visuals.a .
+73.)* YS HISTOR=it is used to represent data in form of basic and primitive histograph model (SYNTAX (YS HISTOR(30,30,a,b,c))).same as YS GRAPHP or YS CHARTR .found in visual.a library.
+74.)* YV=It has no use of such kind it shows the creators name and some animation is played (SYNTAX (YV)).found in visual.a library.
+75.)* YS ROUNDR=it is used to represent the value in form of circles it arranges multiple values and considers it as radius of circles and draws multiple circles (SYNTAX (YS ROUNDR(30,30,a,b,c,a,b,b,b))here first two numbers show dimension and all others represent values of individual components).found in visuals.a library.
+76.)* YS FR=it is used to display random number with graphics not of much use for now(SYNTAX (YS FR 50) it is the maximum random number that should be generated).found in visuals.a library.
+77.)* help=it prints some basic commands for helping the user(SYNTAX (help));
+78.)* YS BLD=used to create a screen with color (SYNTAX (1250,800,B,60,B),here first two numbers are dimensions and first alphabet is text on the screen and the number 60 is FPS and LAST B is the screen display color ).
+                                   COLOR CODE OF visuals.a LIBRARY
+                      B=BLACK
+                      K=BLUE
+                      G=green
+                      R=red
+                      default:Gold;
+79.)* releas*,imporE,imporO,releasE,releasO=here O means odd and E means even.
+80.)* YS AREALR=here we use this to fins the area under the curve (SYNTAX (YS AREALR(30,30,a,b,c...)here a,b,c.. are variables and two numbers are the x and y axis)).found in visuals.a library.
+81.)*
